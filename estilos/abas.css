@@ -1,0 +1,36 @@
+@font-face {
+    font-family: 'American';
+    src: url('media/American\ Captain.otf'), url('media/American\ Captain.ttf');
+    font-weight: normal;
+    font-style: normal;
+}
+body{
+    background-image: linear-gradient(to right, #424242, #191716); 
+    color: #7F9172;
+    font-family: Impact, sans-serif;
+}
+
+nav{
+    font-family: 'American';
+}
+
+h1{
+    font-family: 'American';
+}
+
+ul{
+    display: flex;
+    justify-content: space-between;
+    list-style-type: none;
+    align-items: center;
+    padding: 10px;
+}
+a{
+    color: #7F9172;
+    text-decoration: none;
+}
+
+.epa{
+    text-align: center;
+}
+

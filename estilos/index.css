@@ -1,0 +1,325 @@
+@charset "UTF-8";
+
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+:root{
+    --cor1:#ECF0F1;
+    --cor2:#9684A1;
+    --cor3:#7F9172;
+    --cor4:#424242;
+    --cor5:#191716;
+}
+
+html, body{
+    height: 100vh;
+}
+
+body{
+    background-image: linear-gradient(to right, #424242, #191716); 
+    color: var(--cor1);
+    font-family: "Ubuntu", sans-serif;
+    box-sizing: border-box;
+}
+
+
+
+header{
+    background-image: linear-gradient(to right, #424242, #191716); 
+    padding: 40px;
+    display: flex;
+    justify-content: center;
+    border-bottom: 3px solid var(--cor3);
+    position: fixed;
+    width: 100%;
+    z-index: 2;
+}
+
+header > div{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 60px;
+}
+
+a{
+    text-decoration: none;
+    color: white;
+}
+
+#logo a{
+    color: var(--cor3);
+    width: 350px;
+    font-weight: bold;
+}
+
+menu{
+    padding: 10px;
+    display: flex;
+    justify-content: space-between;
+    box-shadow: 20px red;
+}
+
+menu a{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    color: gray;
+    font-weight: bold;
+    padding: 10px 0px;
+    width: 120px;
+}
+
+menu a::after{
+    content: "";
+    width: 0%;
+    height: 3px;
+    margin-top: 10px;
+    background-color: var(--cor3);
+    transition: .5s ease-in-out;
+}
+
+menu a:hover{
+    color: var(--cor3);
+    transition: .5s;
+}
+
+menu a:hover::after{
+    width: 100%;
+}
+
+
+#contato{
+    padding: 10px;
+    width: 350px;
+    display: flex;
+    justify-content: flex-end;
+}
+
+#contato a, #btn{
+    background-color: var(--cor3);
+    font-weight: bold;
+    width: 150px;
+    height: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 30px;
+}
+
+#contato a:hover, #btn:hover{
+    background-color: #7f9172d8;
+    box-shadow: 0px 0px 3px 3px #ffffff13;
+    transform: translateY(2px);
+    transition: .7s;
+}
+
+
+
+main{
+    padding: 40px;
+}
+
+
+
+
+footer{
+    border-top: 3px solid var(--cor3);
+    display: flex;
+    flex-direction: column;
+}
+
+footer div#info{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+footer div#info-container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+footer div#contato{
+    display: flex;
+    width: 500px;
+    justify-content: space-between;
+    margin: 20px 0px;
+}
+
+footer div#contato p{
+    display: flex;
+    align-items: center;
+}
+
+footer div#contato p span{
+    margin-right: 5px;
+}
+
+footer div#logo{
+    margin: 10px 0px 10px 0px;
+}
+
+
+footer div#social-icons{
+    display: flex;
+    justify-content: center;
+}
+
+footer div#social-icons img{
+    width: 100px;
+    border-radius: 50%;
+}
+
+footer div#copy{
+    background-color: var(--cor5);
+    padding: 10px;
+    text-align: center;
+}
+
+footer div#copy strong{
+    color: var(--cor3);
+}
+
+
+
+@media (max-width:740px) {
+    #logo a{
+        width: auto;
+        font-size: .7em;
+    }
+
+    menu{
+        gap: 10px;
+    }
+    
+    menu a{
+        width: 82px;
+    }
+
+    #contato a{
+        width: 120px;
+    }
+}
+
+
+@media (max-width: 560px) {
+
+    #logo{
+        display: none;
+    }
+
+    footer div#contato{
+        width: auto;
+        flex-direction: column;
+        gap: 20px;
+    }
+
+}
+
+@media (max-width: 460px) {
+
+    header{
+        padding: 10px;
+    }
+
+    header > div{
+        height: auto;
+        flex-wrap: wrap;
+        margin-left: -40px;
+    }
+
+    #contato{
+        width: auto;
+    }
+
+    #contato a{
+        
+    }
+
+}
+
+@media (max-width: 280px) {
+
+    header{
+        padding: 10px;
+    }
+
+    header > div{
+        height: auto;
+        flex-wrap: wrap;
+        margin-left: -30px;
+    }
+
+    menu{
+
+    }
+
+    menu a{
+        font-size: .9em;
+        width: auto;
+    }
+
+    #contato{
+        width: auto;
+    }
+
+    #contato a{
+        width: 100px;
+        height: 40px;
+    }
+
+}
+
+
+@media (max-width: 240px) {
+
+    footer div#contato{
+        font-size: .7em;
+    }
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* @font-face {
+    font-family: 'American';
+    src: url('media/American\ Captain.otf'), url('../media/American\ Captain.ttf');
+    font-weight: normal;
+    font-style: normal;
+} */

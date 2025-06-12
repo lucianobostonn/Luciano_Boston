@@ -1,0 +1,514 @@
+:root{
+    --cor1:#ECF0F1;
+    --cor2:#9684A1;
+    --cor3:#7F9172;
+    --cor4:#424242;
+    --cor5:#191716;
+}
+
+#me{
+    border-bottom: 1px solid #7F9172;
+    margin-bottom: 100px;
+}
+
+#me > h1{
+    color: var(--cor2);
+}
+
+#me div#container{
+    margin-top: 20px;
+    display: flex;
+    flex-direction: column;
+    max-width: 1400px;
+}
+
+#me div#container #about{
+    display: flex;
+}
+
+#me div#img{
+    margin-right: 50px;
+}
+
+#me div#img img{
+    width: 400px;
+    border-radius: 50px;
+    border: 5px solid var(--cor3);
+}
+
+#me div#info {
+    margin-top: 70px;
+}
+
+#me h1 strong{
+    color: var(--cor2);
+}
+
+#me div#info div p{
+    font-family: Arial, Helvetica, sans-serif;
+    margin-top: 50px;
+    font-size: 1.2em;
+    line-height: 1.5;
+}
+
+#me div#info div p strong{
+    color: var(--cor2);
+}
+
+#me div#info div p i{
+    color: var(--cor3);
+    font-size: .9em;
+    font-weight: bold;
+}
+
+
+#me div#tec{
+    margin-top: 100px;
+}
+
+#me div#tec h1{
+    color: var(--cor2);
+}
+
+#me div#tec-container{
+    display: flex;
+    flex-direction: column;
+    margin-top: 50px;
+}
+
+#me div.item-container{
+    border-radius: 10px;
+    padding: 20px;
+    margin: 10px 0px;
+    
+}
+
+#me div.item-container div.item{
+    display: flex;
+    flex-wrap: wrap;
+}
+
+
+#me div.item-container div.item div.img{
+    width: 100px;
+    margin: 20px;
+    padding: 10px;
+    display: flex;
+    flex-flow: column;
+    align-items: center;
+    justify-content: space-evenly;
+    color: var(--cor2);
+}
+
+
+#me div.item-container div.item div.img img{
+    width: 100%;
+}
+
+.item_progress{
+    min-height: 200px;
+    margin: 20px 10px;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+}
+
+.progress-bar{
+    background-color: #959595;
+    width: 500px;
+    height: 10px;
+    border-radius: 5px;
+
+}
+
+.progress-bar div{
+    height: 10px;
+    border-radius: 5px;
+    width: 0%;
+    background-color: var(--cor3);
+}
+
+.progress-bar div span{
+    font-size: .8em;
+    height: 40px;
+    width: 40px;
+    border-radius: 50%;
+    border: 1px solid var(--cor3);
+    background-color: var(--cor5);
+    float: right;
+    margin-top: -15px;
+    margin-right: -20px;
+    color: var(--cor1);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.progress-bar .html{
+    animation: html 1s linear forwards;
+}
+
+.progress-bar .css{
+    animation: css 1s linear forwards;
+}
+
+.progress-bar .javascript{
+    animation: javascript 1s linear forwards;
+}
+
+.progress-bar .c_sharp{
+    animation: c_sharp 1s linear forwards;
+}
+
+.progress-bar .php{
+    animation: php 1s linear forwards;
+}
+
+.progress-bar .mysql{
+    animation: mysql 1s linear forwards;
+}
+
+.progress-bar .mongodb{
+    animation: mongodb 1s linear forwards;
+}
+
+.progress-bar .node{
+    animation: node 1s linear forwards;
+}
+
+.progress-bar .react{
+    animation: react 1s linear forwards;
+}
+
+.progress-bar .express{
+    animation: express 1s linear forwards;
+}
+
+.progress-bar .tailwind{
+    animation: tailwind 1s linear forwards;
+}
+
+.progress-bar .reactRouter{
+    animation: reactRouter 1s linear forwards;
+}
+
+.progress-bar .jwt{
+    animation: jwt 1s linear forwards;
+}
+
+.progress-bar .socketIo{
+    animation: socketIo 1s linear forwards;
+}
+
+@keyframes html {
+    100%{
+        width: 90%;
+    }
+}
+
+@keyframes css {
+    100%{
+        width: 91%;
+    }
+}
+
+@keyframes javascript {
+    100%{
+        width: 95%;
+    }
+}
+
+@keyframes c_sharp {
+    100%{
+        width: 80%;
+    }
+}
+
+@keyframes php {
+    100%{
+        width: 60%;
+    }
+}
+
+@keyframes mysql {
+    100%{
+        width: 70%;
+    }
+}
+
+@keyframes mongodb {
+    100%{
+        width: 69%;
+    }
+}
+
+@keyframes node {
+    100%{
+        width: 90%;
+    }
+}
+
+@keyframes react {
+    100%{
+        width: 92%;
+    }
+}
+
+@keyframes express {
+    100%{
+        width: 79%;
+    }
+}
+
+@keyframes tailwind {
+    100%{
+        width: 50%;
+    }
+}
+
+@keyframes reactRouter {
+    100%{
+        width: 65%;
+    }
+}
+
+@keyframes jwt {
+    100%{
+        width: 69%;
+    }
+}
+
+@keyframes socketIo {
+    100%{
+        width: 64%;
+    }
+}
+
+
+
+@media (max-width: 960px) {
+    #me div#container #about{
+        flex-direction: column;
+    }
+
+    .progress-bar{
+        background-color: #959595;
+        width: 500px;
+        height: 10px;
+        border-radius: 5px;
+    
+    }
+}
+
+
+@media (max-width: 585px) {
+
+    .progress-bar{
+        width: 400px
+    }
+}
+
+@media (max-width: 485px) {
+    .progress-bar{
+        width: 300px;
+    }
+
+    .progress-bar div span{
+        font-size: .7em;
+        height: 30px;
+        width: 30px;
+    }
+}
+
+@media (max-width: 460px) {
+
+    #me div#img{
+        margin-right: 0px;
+    }
+    
+    #me div#img img{
+        width: 300px;
+    }
+    
+    #me div#info {
+        margin-top: 70px;
+    }
+    
+    #me div#info div p{
+        font-family: Arial, Helvetica, sans-serif;
+        margin-top: 50px;
+        font-size: 1.2em;
+        line-height: 1.5;
+    }
+
+
+}
+
+@media (max-width: 385px) {
+
+    #me div#tec{
+        margin-left: -40px;
+    }
+
+    .item_progress{
+        margin: 0px;
+        border-radius: 10px;
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-end;
+    }
+
+    .progress-bar{
+        width: 250px;
+    }
+}
+
+@media (max-width: 360px) {
+
+    #me div#about{
+        margin-left: -30px;
+    }
+    
+    #me div#img img{
+        width: 250px;
+        border: 4px solid var(--cor3);
+    }
+    
+    #me div#info {
+        margin-top: 50px;
+    }
+
+    #me div#info h1{
+        font-size: 1.8em;
+    }
+    
+    
+    #me div#info div p{
+        font-family: Arial, Helvetica, sans-serif;
+        margin-top: 40px;
+        font-size: 1em;
+    }
+
+}
+
+
+@media (max-width: 285px) {
+
+    #me div#tec > h1{
+        font-size: 1.5em;
+    }
+
+    #me div#tec h2{
+        font-size: 1.2em;
+    }
+
+    #me div.item-container div.item div.img{
+        width: 80px;
+    }
+
+    .progress-bar{
+        width: 200px;
+        height: 5px;
+    }
+
+    .progress-bar div{
+        height: 5px;
+    }
+}
+
+
+@media (max-width: 275px) {
+    
+    #me div#img img{
+        width: 200px;
+        border: 3px solid var(--cor3);
+    }
+    
+    #me div#info {
+        margin-top: 40px;
+    }
+
+    #me div#info h1{
+        font-size: 1.5em;
+    }
+    
+    
+    #me div#info div p{
+        font-family: Arial, Helvetica, sans-serif;
+        margin-top: 30px;
+        font-size: .9em;
+    }
+
+}
+
+
+@media (max-width: 230px) {
+
+    .progress-bar{
+        width: 150px;
+    }
+
+    .progress-bar div{
+        height: 5px;
+    }
+
+    .progress-bar div span{
+        font-size: .6em;
+        height: 25px;
+        width: 25px;
+    }
+}
+
+@media (max-width: 225px) {
+
+    #me > h1{
+        font-size: 1.5em;
+    }
+    
+    #me div#img img{
+        width: 150px;
+        border: 1px solid var(--cor3);
+    }
+    
+    #me div#info {
+        margin-top: 40px;
+    }
+
+    #me div#info h1{
+        font-size: 1.2em;
+    }
+    
+    
+    #me div#info div p{
+        font-family: Arial, Helvetica, sans-serif;
+        margin-top: 30px;
+        font-size: .8em;
+    }
+
+}
+
+@media (max-width: 190px) {
+
+    #me div#tec > h1{
+        font-size: 1.2em;
+    }
+
+    #me div#tec h2{
+        font-size: 1em;
+    }
+
+    .progress-bar{
+        width: 120px;
+    }
+
+    .progress-bar div{
+        height: 5px;
+    }
+
+    .progress-bar div span{
+        font-size: .6em;
+        height: 25px;
+        width: 25px;
+    }
+}
