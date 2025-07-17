@@ -92,7 +92,6 @@ menu a:hover::after{
     width: 100%;
 }
 
-
 #contato{
     padding: 10px;
     width: 350px;
@@ -118,6 +117,32 @@ menu a:hover::after{
     transition: .7s;
 }
 
+#trad{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 90px;
+    display: flex;
+    padding: 10px;
+    font-size: 1.3em;
+    cursor: pointer;
+}
+
+#pt{
+    border: 1px solid var(--cor3);
+    width: 40px;
+    padding: 5px;
+}
+
+#en{
+    border: 1px solid var(--cor3);
+    width: 40px;
+    padding: 5px;
+}
+
+.ativo{
+    background-color: var(--cor3);
+}
 
 
 main{

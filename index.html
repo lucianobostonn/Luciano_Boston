@@ -21,7 +21,10 @@
     <link rel="stylesheet" href="estilos/me.css" />
     <link rel="stylesheet" href="estilos/contact.css" />
   </head>
+
+
   <body>
+
     <header>
       <div>
         <div id="logo">
@@ -33,13 +36,20 @@
         <menu>
           <a href="index.html">Home</a>
           <a href="#projetos">Projectos</a>
-          <a href="#me">Sobre mim</a>
+          <a href="#me" id="menuAboutMe">Sobre mim</a>
           
         </menu>
 
-        <div id="contato">
-          <a href="#contact">Fale comigo</a>
-        </div>
+        
+          <div id="contato">
+            <a href="#contact">Fale comigo</a>
+          </div>
+
+          <div id="trad">
+            <div id="pt" class="ativo" class="lang" >PT</div>
+            <div id="en" class="lang">EN</div>
+          </div>
+        
       </div>
     </header>
 
@@ -49,8 +59,8 @@
           <div id="content">
             <h1>JUST DO IT.</h1>
 
-            <h2>Desenvolvedor FullStack</h2>
-            <p>
+            <h2 id="homeH2">Desenvolvedor FullStack</h2>
+            <p id="homeP">
               Permita-me tirar as suas ideias do papel direto para a tela do seu
               computador.
             </p>
@@ -63,7 +73,7 @@
       </div>
 
       <div id="projetos">
-        <h1>MEUS PROJECTOS</h1>
+        <h1 id="projetosH1">MEUS PROJECTOS</h1>
 
         <div id="projectContainer">
           <div class="item">
@@ -75,12 +85,12 @@
             <div class="legenda">
               <h2>Boston Store</h2>
 
-              <p>
+              <p id="BostonStoreP">
                 É uma loja virtual focada na comercialização de artigos
                 eletrónicos, com um design moderno e bem tecnológico.
               </p>
               <a href="https://boston-store.vercel.app/" target="_blank">
-              <div class="link" ><img width="50" height="50" src="https://img.icons8.com/ios/50/internet--v1.png" alt="internet--v1"/>Ver Site</div>
+              <div class="link" ><img width="50" height="50" src="https://img.icons8.com/ios/50/internet--v1.png" alt="internet--v1"/><span class="goSite">Ver Site</span></div>
             </a>
             </div>
           </div>
@@ -94,12 +104,12 @@
             <div class="legenda">
               <h2>Boston LandScapes</h2>
 
-              <p>
+              <p id="BostonLandScapesP">
                 É um site de viagens, construído com foco no design e imersão.
                 Se permita viajar em seus pensamentos!
               </p>
               <a href="https://boston-landscapes.vercel.app/" target="_blank">
-                <div class="link" ><img width="50" height="50" src="https://img.icons8.com/ios/50/internet--v1.png" alt="internet--v1"/>Ver Site</div>
+                <div class="link" ><img width="50" height="50" src="https://img.icons8.com/ios/50/internet--v1.png" alt="internet--v1"/><span class="goSite">Ver Site</span></div>
               </a>
             </div>
           </div>
@@ -113,12 +123,12 @@
             <div class="legenda">
               <h2>Cafena</h2>
 
-              <p>
+              <p id="CafenaP">
                 É um site para cafeteria que pode ser adaptado para
                 restaurantes, com foco apenas no layout.
               </p>
               <a href="https://cafeteria-virid.vercel.app/" target="_blank">
-                <div class="link" ><img width="50" height="50" src="https://img.icons8.com/ios/50/internet--v1.png" alt="internet--v1"/>Ver Site</div>
+                <div class="link" ><img width="50" height="50" src="https://img.icons8.com/ios/50/internet--v1.png" alt="internet--v1"/><span class="goSite">Ver Site</span></div>
               </a>
             </div>
           </div>
@@ -132,11 +142,11 @@
             <div class="legenda">
               <h2>Refrigerante Animations</h2>
 
-              <p>
+              <p id="RefriAnimationsP">
                 É um site simples e moderno, construído com foco nas animações.
               </p>
               <a href="https://refrigerante.vercel.app//" target="_blank">
-                <div class="link" ><img width="50" height="50" src="https://img.icons8.com/ios/50/internet--v1.png" alt="internet--v1"/>Ver Site</div>
+                <div class="link" ><img width="50" height="50" src="https://img.icons8.com/ios/50/internet--v1.png" alt="internet--v1"/><span class="goSite">Ver Site</span></div>
               </a>
             </div>
           </div>
@@ -153,12 +163,12 @@
             </div>
             <div class="legenda">
               <h2>Boston Invest</h2>
-              <p>
+              <p id="BostonInvestP">
                 É um gestor de projetos de investimentos, com categorização de
                 projetos e gestão simples de orçamento.
               </p>
               <a href="https://finance-luciano-bostons-projects.vercel.app/" target="_blank">
-                <div class="link" ><img width="50" height="50" src="https://img.icons8.com/ios/50/internet--v1.png" alt="internet--v1"/>Ver Site</div>
+                <div class="link" ><img width="50" height="50" src="https://img.icons8.com/ios/50/internet--v1.png" alt="internet--v1"/><span class="goSite">Ver Site</span></div>
               </a>
             </div>
           </div>
@@ -172,13 +182,13 @@
             <div class="legenda">
               <h2>Boomy</h2>
 
-              <p>
+              <p id="BoomyP">
                 É uma rede social com funcionalidades simples, como criação de
                 posts, autenticação e chat em tempo real entre usuário
                 conectados.
               </p>
               <a href="https://boomy-beige.vercel.app/" target="_blank">
-                <div class="link" ><img width="50" height="50" src="https://img.icons8.com/ios/50/internet--v1.png" alt="internet--v1"/>Ver Site</div>
+                <div class="link" ><img width="50" height="50" src="https://img.icons8.com/ios/50/internet--v1.png" alt="internet--v1"/><span class="goSite">Ver Site</span></div>
               </a>
             </div>
           </div>
@@ -194,12 +204,12 @@
             </div>
             <div class="legenda">
               <h2>Boston Burguer</h2>
-              <p>
+              <p id="BostonBurguerP">
                 É um site para restaurante, com todas as funcionalidades básicas
                 necessárias para atender os seus clientes online.
               </p>
               <a href="https://hamburgueria-iota-three.vercel.app/" target="_blank">
-                <div class="link" ><img width="50" height="50" src="https://img.icons8.com/ios/50/internet--v1.png" alt="internet--v1"/>Ver Site</div>
+                <div class="link" ><img width="50" height="50" src="https://img.icons8.com/ios/50/internet--v1.png" alt="internet--v1"/><span class="goSite">Ver Site</span></div>
               </a>
             </div>
           </div>
@@ -211,13 +221,13 @@
               </a>
             </div>
             <div class="legenda">
-              <h2>Verificador de Idade</h2>
-              <p>
+              <h2 id="AgeVerifyH2">Verificador de Idade</h2>
+              <p id="AgeVerifyP">
                 É um projeto bem básico, que nos permite ver a imagem principal
                 alterando consoante a idade e gênero selecionado.
               </p>
               <a href="https://lucianobostonn.github.io/Idade/" target="_blank">
-                <div class="link" ><img width="50" height="50" src="https://img.icons8.com/ios/50/internet--v1.png" alt="internet--v1"/>Ver Site</div>
+                <div class="link" ><img width="50" height="50" src="https://img.icons8.com/ios/50/internet--v1.png" alt="internet--v1"/><span class="goSite">Ver Site</span></div>
               </a>
             </div>
           </div>
@@ -233,13 +243,13 @@
             </div>
 
             <div class="legenda">
-              <h2>Gestor de Tarefas</h2>
-              <p>
+              <h2 id="toDoListH2">Gestor de Tarefas</h2>
+              <p id="toDoListP">
                 É um gestor de tarefas que nos dá a possibilidade de marcar as
                 tarefas concluídas e ver a descrição da tarefa em uma outra aba.
               </p>
               <a href="https://react-js-git-master-luciano-bostons-projects.vercel.app/" target="_blank">
-                <div class="link" ><img width="50" height="50" src="https://img.icons8.com/ios/50/internet--v1.png" alt="internet--v1"/>Ver Site</div>
+                <div class="link" ><img width="50" height="50" src="https://img.icons8.com/ios/50/internet--v1.png" alt="internet--v1"/><span class="goSite">Ver Site</span></div>
               </a>
             </div>
           </div>
@@ -254,13 +264,13 @@
               </a>
             </div>
             <div class="legenda">
-              <h2>Tela de Login</h2>
-              <p>
+              <h2 id="telaLoginH2">Tela de Login</h2>
+              <p id="telaLoginP">
                 É uma tela de login comum, no entanto foi a primeira que
                 desenvolvi no começo dos meus estudos sobre Programação.
               </p>
               <a href="https://lucianobostonn.github.io/Tela-de-login/" target="_blank">
-                <div class="link" ><img width="50" height="50" src="https://img.icons8.com/ios/50/internet--v1.png" alt="internet--v1"/>Ver Site</div>
+                <div class="link" ><img width="50" height="50" src="https://img.icons8.com/ios/50/internet--v1.png" alt="internet--v1"/><span class="goSite">Ver Site</span></div>
               </a>
             </div>
           </div>
@@ -282,7 +292,7 @@
             </div>
             <div class="legenda">
               <h2>BostonFinance</h2>
-              <p>
+              <p id="BostonFinanceP">
                 É um aplicativo de controle de finanças pessoais, mas pode ser adaptado para atender um fluxo maior.
               </p>
               <!-- <a href="#BostonFinance">
@@ -303,11 +313,11 @@
             </div>
             <div class="legenda">
               <h2>BostonCoin</h2>
-              <p>
+              <p id="BostonCoinP">
                 É um aplicativo mobile que monitora as flutuações do Bitcoin.
               </p>
               <a href="https://expo.dev/accounts/lucianoboston/projects/BostonCoin/builds/76c1aab8-45d2-445c-92f9-4e7654e83cc5" target="_blank">
-                <div class="link" ><img width="30" height="30" src="https://img.icons8.com/material-rounded/24/download--v1.png" alt="download--v1"/>Baixar APK</div>
+                <div class="link" ><img width="30" height="30" src="https://img.icons8.com/material-rounded/24/download--v1.png" alt="download--v1"/>Download</div>
               </a>
             </div>
           </div>
@@ -323,7 +333,7 @@
             </div>
             <div class="legenda">
               <h2>BostonDelivery</h2>
-              <p>
+              <p id="BostonDeliveryP">
                 É um app de entregas com foco principal no layout.
               </p>
               <!-- <a href="#BostonDelivery" target="_blank">
@@ -343,7 +353,7 @@
             </div>
             <div class="legenda">
               <h2>BostonHealth</h2>
-              <p>
+              <p id="BostonHealthP">
                 É um aplicativo simples que calcula o índice de massa corporal.
               </p>
               <!-- <a href="#BostonHealth" target="_blank">
@@ -358,34 +368,34 @@
       </div>
 
       <div id="me">
-        <h1>QUEM SOU EU?</h1>
+        <h1 id="meH1">QUEM SOU EU?</h1>
         <div id="container">
           <div id="about">
             <div id="img">
               <img src="IMG/Work.png" alt="" />
             </div>
             <div id="info">
-              <h1>MUITO PRAZER.</h1>
-              <h1>EU SOU O <strong>LUCIANO BOSTON</strong></h1>
+              <h1 id="meInfoH11">MUITO PRAZER.</h1>
+              <h1 id="meInfoH12">EU SOU O <strong>LUCIANO BOSTON</strong></h1>
               <div>
-                <p>
-                  Sou um Desenvolvedor FullStack angolano.
+                <p id="meInfoP1">
+                  Eu sou um Desenvolvedor FullStack angolano.
                   Sou muito apaixonado por tecnologia, tão apaixonado que mesmo fazendo o ensino médio de <strong>Finanças</strong>, eu ainda arranjo tempo na rotina para trabalhar na Área de TI. E aproveitando as bases sólidas que tenho nas duas áreas, <strong>posso criar sistemas que dinamizam boa parte do nosso trabalho</strong>, ou seja, criando um software que economize tempo e faça com precisão a gestão do seu negócio.
                 </p>
-                <p>
+                <p id="meInfoP2">
                   <strong>Sou um excelente comunicador</strong>, deixando de ser apenas um bom desenvolvedor, mas também um grande parceiro de equipa. Desde os trabalhos escolares, que levo tudo com muita <strong>responsabilidade e comprometimento absoluto</strong>. Eu acredito que sou como um <strong>médico</strong>, mas ao em vez de entregar uma cura, eu entrego uma realidade onde já não existem dores.
                 </p>
-                <p><i>Não deixes que a rotina te roube os sonhos.</i></p>
+                <p id="meMotivation"><i>Não deixes que a rotina te roube os sonhos.</i></p>
               </div>
             </div>
                     </div>
           </div>
 
         <div id="tec">
-          <h1>TECNOLOGIAS</h1>
+          <h1 id="tecH1">TECNOLOGIAS</h1>
           <div id="tec-container">
             <div id="lang" class="item-container">
-              <h2>Linguagens e Banco de Dados</h2>
+              <h2 id="tecH2">Linguagens e Banco de Dados</h2>
               <div class="item">
 
                 <div class="item_progress">
@@ -548,7 +558,7 @@
             </div>
 
             <div id="other-tec" class="item-container">
-              <h2>Outras Tecnologias</h2>
+              <h2 id="otherTecH2">Outras Tecnologias</h2>
               <div class="item">
                 
                 <div class="img">
@@ -571,7 +581,7 @@
 
       <div id="contact">
         <div id="formContainer">
-          <h1>FALE COMIGO</h1>
+          <h1 id="ContactMeH1">FALE COMIGO</h1>
           <form onsubmit="enviarWhatsApp(event)">
             <div class="input">
               <input
@@ -591,7 +601,7 @@
                 required
               ></textarea>
             </div>
-            <input type="submit" value="Enviar para o WhatsApp" />
+            <input type="submit" value="Enviar para o WhatsApp" id="iSubmit"/>
           </form>
         </div>
       </div>
@@ -629,7 +639,7 @@
       </div>
 
       <div id="copy">
-        <p>Site desenvolvido por <strong>Luciano Boston</strong></p>
+        <p id="copyP">Site desenvolvido por <strong>Luciano Boston</strong></p>
       </div>
     </footer>
 
