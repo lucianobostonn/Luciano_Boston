@@ -263,8 +263,24 @@ footer div#copy strong{
         width: auto;
     }
 
-    #contato a{
-        
+    #trad{
+        top: 100px;
+        left: auto;
+        right: 0;
+        width: 80px;
+        font-size: 1em;
+    }
+
+    #pt{
+        border: 1px solid var(--cor3);
+        width: 30px;
+        padding: 5px;
+    }
+    
+    #en{
+        border: 1px solid var(--cor3);
+        width: 30px;
+        padding: 5px;
     }
 
 }
